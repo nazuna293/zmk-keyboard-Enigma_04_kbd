@@ -1,0 +1,17 @@
+config SHIELD_Enigma_04_kbd_L
+    def_bool $(shields_list_contains,Enigma_04_kbd_L)
+
+config SHIELD_Enigma_04_kbd_R
+    def_bool $(shields_list_contains,Enigma_04_kbd_R)
+
+config SHIELD_Enigma_04_kbd_L_O
+    def_bool $(shields_list_contains,Enigma_04_kbd_L_O)
+
+config SHIELD_Enigma_04_kbd_R_O
+    def_bool $(shields_list_contains,Enigma_04_kbd_R_O)
+
+config SHIELD_Enigma_04_kbd_L_Q
+    def_bool $(shields_list_contains,Enigma_04_kbd_L_Q)
+
+config SHIELD_Enigma_04_kbd_R_Q
+    def_bool $(shields_list_contains,Enigma_04_kbd_R_Q)
