@@ -31,34 +31,34 @@ layers:
   - B
   tenkey:
   - Sft+TAB
-  - UP
+  - ↑
   - TAB
   - ''
-  - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
+  - /
+  - '7'
+  - '8'
+  - '9'
   - ''
-  - LEFT
-  - DOWN
-  - RIGHT
+  - ←
+  - ↓
+  - →
   - ''
-  - KP ASTERISK
-  - KP 4
-  - KP 5
-  - KP 6
+  - '*'
+  - '4'
+  - '5'
+  - '6'
   - ''
   - ''
   - ''
   - ''
   - {type: held}
   - ''
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  cursor: [Sft+TAB, '', TAB, '', '', HOME, PAGE UP, PRINTSCREEN, '', '', '', '', '', '', END, PAGE DOWN, UP, '', '', '', '', '', '', '', '', LEFT, DOWN, RIGHT]
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  cursor: [Sft+TAB, '', TAB, '', '', HOME, PgUp, Prt Scn, '', '', '', '', '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   symbol:
   - ''
   - ''
@@ -89,56 +89,28 @@ layers:
   - F12
   - ''
   macro: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
-  other:
-  - BT CLR
-  - ''
-  - BT CLR ALL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&bootloader'
-  - '&sys_reset'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&sys_reset'
-  - '&bootloader'
-  to_CTRL: ['', UP, '', '', '', '', '', '', '', LEFT, DOWN, RIGHT, '', '', '', '', UP, '', '', '', '', '', '', '', '', LEFT, DOWN, RIGHT]
-  to_SHIFT: ['', UP, '', '', '', '', '', '', '', LEFT, DOWN, RIGHT, '', '', '', '', UP, '', '', '', '', '', '', '', '', LEFT, DOWN, RIGHT]
-  to_WIN: ['', UP, '', '', '', '', '', '', '', LEFT, DOWN, RIGHT, '', '', '', '', UP, '', '', '', '', '', '', '', '', LEFT, DOWN, RIGHT]
+  other: [BT CLR, '', BT CLR ALL, '', '', '', '', '', BT 1, BT 2, BT 3, BT 4, BT 5, '', '', '', '', '', Boot, Reset, '', '', '', '', '', '', Reset, Boot]
+  to_CTRL: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
+  to_SHIFT: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
+  to_WIN: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   to_ALT:
   - Sft+TAB
-  - UP
+  - ↑
   - TAB
   - ''
   - ''
   - {t: HOME, type: held}
-  - PAGE UP
-  - {t: PRINTSCREEN, type: held}
+  - PgUp
+  - {t: Prt Scn, type: held}
   - ''
-  - LEFT
-  - DOWN
-  - RIGHT
+  - ←
+  - ↓
+  - →
   - ''
   - ''
   - END
-  - PAGE DOWN
-  - UP
+  - PgDn
+  - ↑
   - ''
   - ''
   - ''
@@ -147,22 +119,24 @@ layers:
   - ''
   - ''
   - ''
-  - LEFT
-  - DOWN
-  - RIGHT
+  - ←
+  - ↓
+  - →
 combos:
 - p: [15, 16]
   k: {t: ENTER, h: symbol}
   l: [Default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
 - p: [6, 7]
-  k: {t: BACKSPACE, h: tenkey}
+  k: {t: BS, h: tenkey}
   l: [Default, tenkey, cursor, symbol]
 - p: [5, 7]
-  k: {t: DELETE, h: to_ALT}
+  k: {t: Del, h: to_ALT}
   l: [Default, tenkey, cursor, symbol]
+  a: top
 - p: [0, 2]
   k: {t: F2, h: tenkey}
   l: [Default, tenkey, cursor, symbol]
+  a: top
 - p: [0, 1]
   k: '&td1'
   l: [Default, tenkey, cursor, symbol]
@@ -178,20 +152,23 @@ combos:
 - p: [9, 11]
   k: Ctl+X
   l: [Default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
+  a: top
 - p: [8, 9]
   k: Ctl+A
   l: [Default, tenkey, cursor, symbol]
 - p: [7, 17]
   k: P
   l: [Default]
+  a: right
 - p: [0, 8]
   k: Q
   l: [Default]
+  a: left
 - p: [4, 5]
-  k: KP MINUS
+  k: '-'
   l: [tenkey]
 - p: [13, 14]
-  k: KP PLUS
+  k: +
   l: [tenkey]
 - p: [11, 12]
   k: KP EQUAL
@@ -217,6 +194,8 @@ combos:
 - p: [20, 18]
   k: '&ALT'
   l: [Default, tenkey, cursor, symbol]
+  a: bottom
 - p: [25, 27]
   k: '&ALT'
   l: [Default, tenkey, cursor, symbol]
+  a: bottom
