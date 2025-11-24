@@ -1,0 +1,24 @@
+if SHIELD_Enigma_04_kbd_L
+
+config ZMK_KEYBOARD_NAME
+    default "Enigma_04_kbd"
+
+config ZMK_USB
+	  default y
+
+config ZMK_BLE
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_Enigma_04_kbd_L || SHIELD_Enigma_04_kbd_R
+config NFCT_PINS_AS_GPIOS
+    default y
+
+config ZMK_SPLIT
+    default y
+
+endif
