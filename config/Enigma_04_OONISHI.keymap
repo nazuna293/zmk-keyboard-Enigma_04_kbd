@@ -375,6 +375,16 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
+        QWERTY {
+            bindings = <
+                &kp W         &kp E         &kp R        &kp T          &kp Y          &kp U        &kp I            &kp O                    
+&kp A           &kp S         &kp D         &kp F        &kp G          &kp H          &kp J        &kp K            &kp L                    &kp MINUS
+&kp Z           &kp X         &kp C         &kp V        &kp B          &kp N          &kp M        &kp COMMA        &kp DOT                  &kp SLASH
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
         tenkey {
             bindings = <
        &kp LS(TAB)  &kp UP    &kp TAB    &none  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9

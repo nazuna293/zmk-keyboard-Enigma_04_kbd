@@ -22,94 +22,94 @@ layers:
   - Z
   - X
   - C
-  - {t: V, h: tenkey}
+  - {t: V, h: QWERTY}
   - '&td3'
   - '&td4'
   - D
   - M
   - J
   - B
-  tenkey:
+  QWERTY:
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - {t: V, type: held}
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  tenkey: [Sft+TAB, ↑, TAB, '', /, '7', '8', '9', '', ←, ↓, →, '', '*', '4', '5', '6', '', '', '', '', '', '', '0', '1', '2', '3', .]
+  cursor:
   - Sft+TAB
-  - ↑
+  - ''
   - TAB
   - ''
-  - /
-  - '7'
-  - '8'
-  - '9'
+  - ''
+  - HOME
+  - PgUp
+  - Prt Scn
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - END
+  - {t: PgDn, type: held}
+  - {t: ↑, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ←
   - ↓
   - →
+  symbol: ['', '', '', '', F1, F2, F3, F4, Sft+1, Sft+2, Sft+3, Sft+4, Sft+5, F5, F6, F7, F8, '', Sft+6, Sft+7, Sft+8, Sft+9, Sft+0, F9, F10, F11, F12, '']
+  macro: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  other: [BT CLR, '', BT CLR ALL, '', '', '', '', '', BT 1, BT 2, BT 3, BT 4, BT 5, '', '', '', '', '', Boot, Reset, '', '', '', '', '', '', Reset, Boot]
+  to_CTRL: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
+  to_SHIFT: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
+  to_WIN:
   - ''
-  - '*'
-  - '4'
-  - '5'
-  - '6'
-  - ''
+  - ↑
   - ''
   - ''
   - ''
   - {type: held}
   - ''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - .
-  cursor: [Sft+TAB, '', TAB, '', '', HOME, PgUp, Prt Scn, '', '', '', '', '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
-  symbol:
-  - ''
-  - ''
-  - ''
-  - ''
-  - F1
-  - F2
-  - F3
-  - F4
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+5
-  - F5
-  - F6
-  - {t: F7, type: held}
-  - {t: F8, type: held}
-  - ''
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Sft+0
-  - F9
-  - F10
-  - F11
-  - F12
-  - ''
-  macro: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
-  other: [BT CLR, '', BT CLR ALL, '', '', '', '', '', BT 1, BT 2, BT 3, BT 4, BT 5, '', '', '', '', '', Boot, Reset, '', '', '', '', '', '', Reset, Boot]
-  to_CTRL: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
-  to_SHIFT: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
-  to_WIN: ['', ↑, '', '', '', '', '', '', '', ←, ↓, →, '', '', '', '', ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
-  to_ALT:
-  - Sft+TAB
-  - ↑
-  - TAB
-  - ''
-  - ''
-  - {t: HOME, type: held}
-  - PgUp
-  - {t: Prt Scn, type: held}
+  - {type: held}
   - ''
   - ←
   - ↓
   - →
   - ''
   - ''
-  - END
-  - PgDn
+  - ''
+  - ''
   - ↑
   - ''
   - ''
@@ -122,40 +122,41 @@ layers:
   - ←
   - ↓
   - →
+  to_ALT: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, Prt Scn, '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
 combos:
 - p: [15, 16]
-  k: {t: ENTER, h: symbol}
-  l: [Default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
+  k: {t: ENTER, h: cursor}
+  l: [Default, QWERTY, tenkey, cursor, other, to_CTRL, to_SHIFT, to_WIN]
 - p: [6, 7]
-  k: {t: BS, h: tenkey}
-  l: [Default, tenkey, cursor, symbol]
+  k: {t: BS, h: QWERTY}
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [5, 7]
-  k: {t: Del, h: to_ALT}
-  l: [Default, tenkey, cursor, symbol]
+  k: {t: Del, h: to_WIN}
+  l: [Default, QWERTY, tenkey, cursor]
   a: top
 - p: [0, 2]
-  k: {t: F2, h: tenkey}
-  l: [Default, tenkey, cursor, symbol]
+  k: {t: F2, h: QWERTY}
+  l: [Default, QWERTY, tenkey, cursor]
   a: top
 - p: [0, 1]
   k: '&td1'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [1, 2]
   k: '&td2'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [9, 10]
   k: Ctl+C
-  l: [Default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
+  l: [Default, QWERTY, tenkey, cursor, other, to_CTRL, to_SHIFT, to_WIN]
 - p: [10, 11]
   k: Ctl+V
-  l: [Default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
+  l: [Default, QWERTY, tenkey, cursor, other, to_CTRL, to_SHIFT, to_WIN]
 - p: [9, 11]
   k: Ctl+X
-  l: [Default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
+  l: [Default, QWERTY, tenkey, cursor, other, to_CTRL, to_SHIFT, to_WIN]
   a: top
 - p: [8, 9]
   k: Ctl+A
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [7, 17]
   k: P
   l: [Default]
@@ -166,36 +167,36 @@ combos:
   a: left
 - p: [4, 5]
   k: '-'
-  l: [tenkey]
+  l: [QWERTY]
 - p: [13, 14]
   k: +
-  l: [tenkey]
+  l: [QWERTY]
 - p: [11, 12]
   k: KP EQUAL
-  l: [Default, tenkey]
+  l: [Default, QWERTY]
 - p: [8, 18]
   k: '&Sft'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [17, 27]
   k: '&Sft'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [18, 19]
   k: '&Ctl'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [27, 26]
   k: '&Ctl'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [19, 20]
   k: '&WIN'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [26, 25]
   k: '&WIN'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
 - p: [20, 18]
   k: '&ALT'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
   a: bottom
 - p: [25, 27]
   k: '&ALT'
-  l: [Default, tenkey, cursor, symbol]
+  l: [Default, QWERTY, tenkey, cursor]
   a: bottom
