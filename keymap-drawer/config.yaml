@@ -17,6 +17,8 @@ parse_config:
     cut:       {align: top}
     lalt:      {align: bottom}
     ralt:      {align: bottom}
+    lsetting:      {align: bottom}
+    rsetting:      {align: bottom}
 
   zmk_keycode_map:
     # custom mappings

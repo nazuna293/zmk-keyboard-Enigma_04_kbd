@@ -229,5 +229,7 @@ combos:
   a: bottom
 - p: [20, 21, 22]
   k: setting
+  a: bottom
 - p: [23, 24, 25]
   k: setting
+  a: bottom
