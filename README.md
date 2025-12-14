@@ -7,10 +7,16 @@
 ### Tap Dance
 |name|tap|hold|2tap|tap hold|
 |:-:|:-:|:-:|:-:|:-:|
-|td1|半／全|layer to_ALT|||
-|td2|F7|layer to_ALT|F8||
+|tp1|半／全|layer to_ALT|||
+|tp2|F7|layer to_ALT|F8||
+|tp3|space|layer |B||
+|tp4|:||;||
+|Sft||Shift||layer to_Shift|
+|Ctl||Ctrl||layer to_Ctrl|
+|Win||Win||layer to_Win|
+|Alt||Alt||layer to_Alt|
+
+※レイヤー to_○○に推移している間は○○キーが押されている状態になっています。
 
 
-※レイヤーに推移している間はALTキーが押されている状態になっています。
-
-![](keymap-drawer/Enigma_04_OONISHI.svg)
+![](keymap-drawer/Enigma_04_QWERTY.svg)
