@@ -5,7 +5,7 @@
 
 // #include <layout_shift_kp_override.dtsi>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 60
 
 / {
     // zmk-listeners
@@ -115,52 +115,52 @@
 
         // rotary encoder
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
         // rotary encoder
 
-        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+        scroll_left_right: mouse_wheel_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
         // rotary encoder
 
-        arrow_left_right: behavior_sensor_rotate_arrow_le {
+        arrow_left_right: arrow_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp RIGHT>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
         // rotary encoder
 
-        arrow_up_down: behavior_sensor_rotate_arrow_up {
+        arrow_up_down: arrow_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp UP>, <&kp DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
         // rotary encoder
 
-        page_up_down: behavior_sensor_rotate_page_up_ {
+        page_up_down: page_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp PAGE_UP>, <&kp PAGE_DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
         td1: td_hz_mo_kn {
