@@ -145,7 +145,8 @@
 
         // rotary encoder
 
-        arrow_up_down: behavior_sensor_rotate_arrow_up {
+        
+: behavior_sensor_rotate_arrow_up {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp UP>, <&kp DOWN>;
@@ -400,7 +401,7 @@
 &kp Z  &kp X  &kp C  &lt 2 V    &td3  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&arrow_up_down>;
         };
 
         tenkey {
