@@ -5,7 +5,7 @@
 
 // #include <layout_shift_kp_override.dtsi>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 800
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 / {
     // zmk-listeners
