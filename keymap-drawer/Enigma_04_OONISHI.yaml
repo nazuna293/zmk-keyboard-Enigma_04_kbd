@@ -194,6 +194,15 @@ combos:
   a: left
 - p: [4, 5]
   k: '-'
+  l: [default]
+- p: [13, 14]
+  k: '@'
+  l: [default]
+- p: [23, 24]
+  k: INTERNATIONAL 1
+  l: [default]
+- p: [4, 5]
+  k: '-'
   l: [tenkey]
 - p: [13, 14]
   k: +

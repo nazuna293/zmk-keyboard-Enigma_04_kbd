@@ -181,14 +181,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SPACE_MO_SLASH_MO";
             #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&lt 3 SLASH>;
+            bindings = <&lt 1 SPACE>, <&kp SLASH>;
         };
 
-        td4: td_g_mo_mo {
+        td4: coron_semicoron {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_G_MO_MO";
+            label = "TD_COLON_SEMICOLON";
             #binding-cells = <0>;
-            bindings = <&lt 1 G>, <&mo 3>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
 
         Ctl: td_ctrl_toctrl {
@@ -292,6 +292,24 @@
         q {
             bindings = <&kp Q>;
             key-positions = <0 8>;
+            layers = <0>;
+        };
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <4 5>;
+            layers = <0>;
+        };
+
+        atsign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
+
+        ro {
+            bindings = <&kp INTERNATIONAL_1>;
+            key-positions = <23 24>;
             layers = <0>;
         };
 
