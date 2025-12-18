@@ -259,6 +259,12 @@
             layers = <0 1 2 3>;
         };
 
+        td4 {
+            bindings = <&td4>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <9 10>;

@@ -171,6 +171,9 @@ combos:
 - p: [1, 2]
   k: '&td2'
   l: [default, tenkey, cursor, symbol]
+- p: [21, 22]
+  k: '&td4'
+  l: [default]
 - p: [9, 10]
   k: Ctl+C
   l: [default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
