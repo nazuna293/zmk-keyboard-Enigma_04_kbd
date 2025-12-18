@@ -23,7 +23,7 @@ layers:
   - X
   - C
   - {t: V, h: cursor}
-  - {t: SPACE, h: tenkey}
+  - '&td3'
   - G
   - D
   - M
@@ -36,8 +36,8 @@ layers:
   - ''
   - /
   - '7'
-  - '8'
-  - '9'
+  - {t: '8', type: held}
+  - {t: '9', type: held}
   - ''
   - ←
   - ↓
@@ -52,7 +52,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - '0'
   - '1'
   - '2'

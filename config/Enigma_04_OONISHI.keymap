@@ -403,7 +403,7 @@
             bindings = <
        &kp L  &kp U  &kp COMMA  &kp DOT      &kp F  &kp W  &kp R  &kp Y
 &kp E  &kp I  &kp A  &kp O      &kp MINUS    &kp K  &kp T  &kp N  &kp S  &kp H
-&kp Z  &kp X  &kp C  &lt 2 V    &lt 1 SPACE  &kp G  &kp D  &kp M  &kp J  &kp B
+&kp Z  &kp X  &kp C  &lt 2 V    &td3         &kp G  &kp D  &kp M  &kp J  &kp B
             >;
 
             sensor-bindings = <&scroll_up_down>;
