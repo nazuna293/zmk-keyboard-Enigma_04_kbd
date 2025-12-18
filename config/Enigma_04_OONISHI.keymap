@@ -177,9 +177,9 @@
             bindings = <&lt 9 F7>, <&kp F8>;
         };
 
-        td3: td_space_mo_slash_mo {
+        td3: td_space_mo_slash {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SPACE_MO_SLASH_MO";
+            label = "TD_SPACE_MO_SLASH";
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&kp SLASH>;
         };
