@@ -223,8 +223,8 @@
     combos {
         compatible = "zmk,combos";
 
-        lt_enter {
-            bindings = <&lt 3 ENTER>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <15 16>;
             layers = <0 1 2 3 6 7 8 9>;
         };
@@ -421,8 +421,8 @@
 
         cursor {
             bindings = <
-       &kp LS(TAB)     &kp UP_ARROW    &kp TAB          &none  &none  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &kp END   &kp PAGE_DOWN  &kp UP           &none
+       &kp LS(TAB)     &kp UP          &kp TAB          &none  &none  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN
+&none  &kp LEFT        &kp DOWN        &kp RIGHT        &none  &none  &kp END   &kp PAGE_DOWN  &kp UP           &none
 &none  &none           &none           &none            &none  &none  &none     &kp LEFT       &kp DOWN         &kp RIGHT
             >;
 
