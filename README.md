@@ -9,7 +9,7 @@
 |:-:|:-:|:-:|:-:|:-:|
 |tp1|半／全|layer to_ALT|||
 |tp2|F7|layer to_ALT|F8||
-|tp3|space|layer |B||
+|tp3|space|layer Tenkey|B(/)||
 |tp4|:||;||
 |Sft||Shift||layer to_Shift|
 |Ctl||Ctrl||layer to_Ctrl|
