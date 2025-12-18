@@ -60,7 +60,7 @@ layers:
   - .
   cursor:
   - Sft+TAB
-  - UP ARROW
+  - ↑
   - TAB
   - ''
   - ''
@@ -68,9 +68,9 @@ layers:
   - PgUp
   - Prt Scn
   - ''
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - ←
+  - ↓
+  - →
   - ''
   - ''
   - END
@@ -93,9 +93,9 @@ layers:
   - ''
   - ''
   - F1
-  - F2
+  - {t: F2, type: held}
   - F3
-  - F4
+  - {t: F4, type: held}
   - Sft+1
   - Sft+2
   - Sft+3
@@ -103,8 +103,8 @@ layers:
   - Sft+5
   - F5
   - F6
-  - {t: F7, type: held}
-  - {t: F8, type: held}
+  - F7
+  - F8
   - ''
   - Sft+6
   - Sft+7
@@ -152,7 +152,7 @@ layers:
   to_ALT: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, Prt Scn, '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
 combos:
 - p: [15, 16]
-  k: {t: ENTER, h: symbol}
+  k: ENTER
   l: [default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
 - p: [6, 7]
   k: {t: BS, h: tenkey}
