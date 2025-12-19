@@ -112,56 +112,6 @@
             flavor = "balanced";
         };
 
-        // rotary encoder
-
-        scroll_up_down: mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <50>;
-        };
-
-        // rotary encoder
-
-        scroll_left_right: mouse_wheel_left_right {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-
-            tap-ms = <50>;
-        };
-
-        // rotary encoder
-
-        arrow_left_right: arrow_left_right {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LEFT>, <&kp RIGHT>;
-
-            tap-ms = <50>;
-        };
-
-        // rotary encoder
-
-        arrow_up_down: arrow_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp UP>, <&kp DOWN>;
-
-            tap-ms = <50>;
-        };
-
-        // rotary encoder
-
-        page_up_down: page_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp PAGE_UP>, <&kp PAGE_DOWN>;
-
-            tap-ms = <50>;
-        };
-
         td1: td_hz_mo_kn {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_HZ_MO_KN";
@@ -398,8 +348,6 @@
 &kp A  &kp S  &kp D  &kp F      &kp G    &kp H  &kp J  &kp K  &kp L  &td4
 &kp Z  &kp X  &kp C  &lt 2 V    &td3  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         tenkey {
@@ -408,8 +356,6 @@
 &none  &kp LEFT     &kp DOWN  &kp RIGHT  &none  &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5  &kp KP_N6  &none
 &none  &none        &none     &none      &none  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         cursor {
@@ -418,8 +364,6 @@
 &none  &kp LEFT        &kp DOWN        &kp RIGHT        &none  &none  &kp END   &kp PAGE_DOWN  &kp UP           &none
 &none  &none           &none           &none            &none  &none  &none     &kp LEFT       &kp DOWN         &kp RIGHT
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         symbol {
@@ -428,8 +372,6 @@
 &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &kp F5  &kp F6   &kp F7   &kp F8   &none
 &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp F9  &kp F10  &kp F11  &kp F12  &none
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         macro {
