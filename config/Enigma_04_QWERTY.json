@@ -32,14 +32,5 @@
         {"row": 2, "col": 9, "x": 9.5, "y": 3}
       ]
     }
-  },
-  "sensors": [
-    {
-      "ref": "encoder_0",
-      "name": "Right_Encoder",
-      "identifier": "encoder_0",
-      "compatible": "alps,ec11",
-      "enabled": true
-    }
-  ]
+  }
 }
