@@ -4,8 +4,8 @@
     layout_kbd0: layout_kbd0 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_kbd1>;
-        kscan = <&kscan_kbd1>;
+        transform = <&transform_kbd0>;
+        kscan = <&kscan_kbd0>;
 
         keys = <
             &key_physical_attrs 100 100  100   0 0 0 0 
